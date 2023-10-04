@@ -34,6 +34,48 @@
 
 <body>
 
+<!-- Popup  -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- Replace the close button icon with your desired icon -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Responsive Image -->
+                        <img src="assets/img/bg-1.jpg" class="img-fluid" alt="Responsive Image">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="modal-body p-4 p-md-5 align-items-center color-2">
+                            <div class="tabulation tabulation2">
+                                <!-- Tab panes -->
+                                <div class="tab-content border-0">
+                                    <div class="tab-pane p-0 container active" id="signin">
+                                        <div class="text w-100">
+                                            <!-- Instagram Icon Link -->
+                                            <a href="https://www.instagram.com/spirit.of.mystery/" target="_blank" class="instagram-link">
+                                                <i class="bi bi-instagram" style="font-size: 1500%;"></i>
+                                                <span>Discover more...</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <!-- ======= Header ======= -->
 <header id="header" class="header d-flex align-items-center fixed-top">
@@ -85,68 +127,6 @@
 
     </div>
 </header><!-- End Header -->
-
-<section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center js-fullheight">
-            <div class="col-md-6 text-center d-flex align-items-center">
-                <div class="wrap w-100">
-                    <h2 class="mb-2">Modal 09</h2>
-                    <button type="button" class="btn btn-primary py-3 px-4" data-toggle="modal"
-                            data-target="#exampleModalCenter">
-                        Launch Modal 09
-                    </button>
-
-                    <!-- Modal -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- INTggggg -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close d-flex align-items-center justify-content-center"
-                        data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" class="ion-ios-close"></span>
-                </button>
-            </div>
-            <div class="row no-gutters">
-                <div class="col-md-6 d-flex">
-                    <div class="modal-body p-5 img d-flex img text-center d-flex align-items-center"
-                         style="background-image: url(assets/img/bg-1.jpg);">
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex">
-                    <div class="modal-body p-4 p-md-5 align-items-center color-2">
-                        <div class="tabulation tabulation2">
-
-
-                            <!-- Tab panes -->
-                            <div class="tab-content border-0">
-                                <div class="tab-pane p-0 container active" id="signin">
-                                    <div class="text w-100">
-
-                                        <div class="form-group">
-                                            <button type="submit"
-                                                    class="form-control btn btn-primary rounded submit px-3">Sign Up
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 
 <!-- INTRO SECTION -->
@@ -413,11 +393,27 @@
     <div class="line"></div>
 </div>
 
+<!-- Include required JavaScript files for the modal -->
+<script src="popup/js/jquery.min.js"></script>
+<script src="popup/js/popper.js"></script>
+<script src="popup/js/bootstrap.min.js"></script>
+<script src="popup/js/main.js"></script>
 
+<!-- Initialize the modal after the page has loaded -->
+<!-- Initialize the modal after the page has loaded -->
 <script>
     setTimeout(function () {
         $('#exampleModalCenter').modal('show');
     }, 5000);
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Close the modal when the close button is clicked
+        $('.modal .close').click(function () {
+            $('#exampleModalCenter').modal('hide');
+        });
+    });
 </script>
 
 <!-- JS Files -->

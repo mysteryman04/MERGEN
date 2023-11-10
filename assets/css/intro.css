@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: "Poppins", sans-serif;
@@ -15,64 +11,14 @@ body {
     --red: #cc033f;
 }
 
-ul {
-    list-style: none;
-}
 
 .page-wrap {
     position: relative;
 }
 
-header {
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
 
-/*  NAV: Top Menu Section
------------------------------------------------ */
-nav {
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    padding: 1em 5em;
-    display: flex;
-    justify-content: space-between;
-}
-nav h1 {
-    font-size: clamp(1.2rem, 6vw, 3rem);
-    font-weight: normal;
-    text-transform: uppercase;
-    color: var(--pill);
-    font-size: 1.3rem;
-    background-color: var(--red);
-    padding: 5px 10px;
-}
-nav ul {
-    display: flex;
-    color: var(--white);
-}
-nav ul li:not(#burger) {
-    visibility: hidden;
-    margin-right: 1.5em;
-}
 
-#burger {
-    width: min-content;
-    height: 28px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
-#burger span {
-    display: block;
-    height: 3px;
-    width: 22px;
-    background-color: var(--red);
-    border-radius: 200px;
-    transition: transform 0.3s 0.3s;
-}
+
 
 .active span:nth-of-type(1) {
     transform: translateY(-3px) scaleX(1.3);
@@ -81,8 +27,7 @@ nav ul li:not(#burger) {
     transform: translateY(3px) scaleX(1.3);
 }
 
-/*  MAIN: Slider Section
------------------------------------------------ */
+
 main {
     width: 100vw;
     height: 100vh;
@@ -278,6 +223,5 @@ section {
         grid-row: 4/5;
     }
 }
-
 
 

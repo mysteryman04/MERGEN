@@ -1,7 +1,7 @@
 
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui,"Poppins", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Cardo", sans-serif;
 }
@@ -1138,11 +1138,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact  .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .sent-message {
   display: none;
   color: #fff;
   background: var(--color-primary);
@@ -1151,7 +1151,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .loading {
   display: none;
   background: var(--color-secondary);
   text-align: center;
@@ -1159,7 +1159,7 @@ section {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contact .php-email-form .loading:before {
+.contact .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1171,25 +1171,19 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact input,
+.contact textarea {
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
-  background-color: var(--color-secondary);
+  background-color: #18251e;
   border: 1px solid #2e3133;
   color: #fff;
 }
 
-.contact .php-email-form input {
-  height: 44px;
-}
 
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
 
-.contact .php-email-form button[type=submit] {
+.contact  button[type=submit] {
   background: var(--color-primary);
   border: 0;
   padding: 10px 35px;
@@ -1198,7 +1192,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact  button[type=submit]:hover {
   background: rgba(39, 167, 118, 0.8);
 }
 

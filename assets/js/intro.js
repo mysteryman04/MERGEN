@@ -1,7 +1,6 @@
-let burger = document.getElementById("burger");
+
 let overlay = document.querySelector("section");
 let heroImage = document.querySelector(".hero-image");
-let showMenu = false;
 let del = 3;
 let i = 1;
 

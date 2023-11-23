@@ -489,16 +489,17 @@ section {
 }
 
 .header .header-social-links a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(24, 166, 111);
   padding-left: 15px;
   display: inline-block;
   line-height: 0px;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 35px;
+
 }
 
 .header .header-social-links a:hover {
-  color: #fff;
+  color: #3fefab;
 }
 
 @media (max-width: 575px) {

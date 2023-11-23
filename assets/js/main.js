@@ -225,3 +225,22 @@ var App = (function (window, document, undefined) {
 
 
 
+
+const backgroundMusic = new Audio("assets/music/turan_-_er_turan_(z3.fm).mp3");
+backgroundMusic.loop = true; // Set the loop attribute
+
+// Play the background music when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    backgroundMusic.play();
+});
+// Function to play or pause the background music
+function toggleMusic() {
+    if (backgroundMusic.paused) {
+        backgroundMusic.play();
+    } else {
+        backgroundMusic.pause();
+    }
+}
+
+// Event listener for clicking on the body to toggle music
+document.body.addEventListener('click', toggleMusic);

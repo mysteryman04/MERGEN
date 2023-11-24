@@ -876,8 +876,10 @@ section {
   }
 }
 
+
+
 /*--------------------------------------------------------------
-# gqallery
+# gallery
 --------------------------------------------------------------*/
 .gallery {
   margin-top: 40px;
@@ -894,6 +896,31 @@ section {
 .gallery .gallery-item img {
   transition: 0.3s;
   position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery .gallery-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 1;
+  transition: opacity ease-in-out 0.3s;
+}
+
+.gallery .gallery-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.gallery .gallery-info p {
+  font-size: 16px;
+  margin: 0;
 }
 
 .gallery .gallery-links {
@@ -937,16 +964,6 @@ section {
   transform: scale(1.1);
 }
 
-
-
-.glightbox-clean .gslide-description {
-  background: #222425;
-}
-
-.glightbox-clean .gslide-title {
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0;
-}
 
 
 /*--------------------------------------------------------------
